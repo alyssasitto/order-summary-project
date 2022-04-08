@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 3rem;
+	height: 100vh;
+	background-color: hsl(225, 100%, 94%);
+	font-family: "Red Hat Display", sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.hero-img {
+	margin-bottom: 1.8rem;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.content {
+	padding: 0 2rem 1.5rem;
+}
+
+.heading {
+	margin-bottom: 1rem;
+	color: hsl(223, 47%, 23%);
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+.description {
+	padding: 0 1.25rem;
+	margin-bottom: 1rem;
+	color: hsl(224, 23%, 55%);
+	line-height: 1.6;
+}
+
+.plan-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.plan {
+	padding: 1rem 0.625rem;
+	margin-bottom: 1.5rem;
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 10px;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+	gap: 10px;
+}
+
+.annual-plan-container {
+	margin-right: 4rem;
+	line-height: 1.6;
+}
+
+.plan-type {
+	font-weight: 900;
+}
+
+.plan-price {
+	color: hsl(224, 23%, 55%);
+	font-weight: bold;
+}
+
+.plan-change {
+	color: hsl(245, 75%, 52%);
+	font-weight: bold;
+}
+
+.plan-change:hover {
+	text-decoration: none;
+	color: #7469e9;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.button {
+	padding: 1rem;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.proceed {
+	color: #fff;
+	background-color: hsl(245, 75%, 52%);
+	box-shadow: 0px 2px 30px 0px rgba(224, 232, 255, 1);
+	transition: all 0.2s;
+}
+
+.proceed:hover {
+	background-color: #7469e9;
+}
+
+.cancel {
+	color: hsl(224, 23%, 55%);
+	background-color: #fff;
+	transition: all 0.2s;
+}
+
+.cancel:hover {
+	color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 1024px) {
+	body {
+		background-image: url(images/pattern-background-desktop.svg);
+		background-repeat: repeat-x;
+	}
+}
